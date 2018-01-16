@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg5"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/btn_plan_rgb_back"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/back_led" />
+
+        <TextView
+            android:id="@+id/tv_plan_rgb_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignBaseline="@+id/btn_single_color_device_back"
+            android:layout_alignBottom="@+id/btn_single_color_device_back"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:textSize="21sp" />
+
+        <Button
+            android:id="@+id/btn_plan_rgb_edit"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/edit" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
